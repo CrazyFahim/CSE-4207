@@ -1,0 +1,119 @@
+$date
+	Sun Jun  8 22:53:43 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ALU_7bit_tb $end
+$var wire 7 ! result [6:0] $end
+$var wire 1 " ZF $end
+$var reg 7 # A [6:0] $end
+$var reg 7 $ B [6:0] $end
+$var reg 1 % OP $end
+$scope module uut $end
+$var wire 7 & A [6:0] $end
+$var wire 7 ' B [6:0] $end
+$var wire 1 % OP $end
+$var wire 1 " ZF $end
+$var wire 7 ( R_SHR [6:0] $end
+$var wire 7 ) R_NOT [6:0] $end
+$var reg 7 * result [6:0] $end
+$scope module NOT1 $end
+$var wire 7 + A [6:0] $end
+$var wire 7 , result [6:0] $end
+$upscope $end
+$scope module SHR1 $end
+$var wire 7 - in [6:0] $end
+$var wire 3 . shift [2:0] $end
+$var reg 7 / out [6:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010101 /
+b0 .
+b1010101 -
+b101010 ,
+b1010101 +
+b101010 *
+b101010 )
+b1010101 (
+b0 '
+b1010101 &
+0%
+b0 $
+b1010101 #
+0"
+b101010 !
+$end
+#10
+b110011 !
+b110011 *
+b1 .
+b11001 )
+b11001 ,
+b110011 (
+b110011 /
+1%
+b1 $
+b1 '
+b1100110 #
+b1100110 &
+b1100110 +
+b1100110 -
+#20
+b1100 !
+b1100 *
+b1100 (
+b1100 /
+b11 .
+b11 $
+b11 '
+#30
+1"
+b0 !
+b0 *
+b0 (
+b0 /
+b111 .
+b111 $
+b111 '
+#40
+0"
+b1111111 !
+b1111111 *
+b0 .
+b1111111 )
+b1111111 ,
+0%
+b0 $
+b0 '
+b0 #
+b0 &
+b0 +
+b0 -
+#50
+1"
+b0 !
+b0 *
+b1 .
+b1111110 )
+b1111110 ,
+b0 (
+b0 /
+1%
+b1 $
+b1 '
+b1 #
+b1 &
+b1 +
+b1 -
+#60
