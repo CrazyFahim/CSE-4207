@@ -5,49 +5,49 @@ module controller (
 );
     reg [2:0] pstate, nstate;
     
-    parameter [2:0] START = 3'b000,
-                    TEST_NOT = 3'b001,
-                    TEST_SHR = 3'b010,
-                    FINISH = 3'b011;
-    
+    parameter START  = 3'b000,
+              ONE    = 3'b001,
+              TWO    = 3'b010,
+              THREE  = 3'b011,
+              FINISH = 3'b100;
+
     // State register
     always @(posedge clk or posedge reset) begin
-        if (reset)
-            pstate <= START;
-        else
-            pstate <= nstate;
+        if (reset) pstate <= START;
+        else pstate <= nstate;
     end
-    
+
     // Next state and output logic
     always @(*) begin
-        // Default outputs
-        A = 7'b0000000;
-        B = 7'b0000000;
+        A = 7'b0;
+        B = 7'b0;
         OP = 1'b0;
         nstate = pstate;
         
         case (pstate)
-            START: begin
-                nstate = TEST_NOT;
+            START:  nstate = ONE;
+            
+            ONE: begin       // Test NOT operation (result non-zero)
+                A = 7'b1010101;
+                OP = 1'b0;   // NOT opcode
+                nstate = TWO;
             end
             
-            TEST_NOT: begin
-                A = 7'b1010101;  // Test pattern for NOT
-                B = 7'b0000000;  // Not used for NOT operation
-                OP = 1'b0;       // NOT operation
-                nstate = TEST_SHR;
+            TWO: begin       // Test SHR operation (result non-zero)
+                A = 7'b1100110;
+                B = 7'b0000001; // Shift by 1
+                OP = 1'b1;   // SHR opcode
+                nstate = THREE;
             end
             
-            TEST_SHR: begin
-                A = 7'b1100110;  // Test pattern for SHR
-                B = 7'b0000011;  // Shift by 3
-                OP = 1'b1;      // SHR operation
+            THREE: begin     // Test SHR operation (force result=0)
+                A = 7'b0000001;
+                B = 7'b0000111; // Shift by 7 (all bits out)
+                OP = 1'b1;
                 nstate = FINISH;
             end
             
-            FINISH: begin
-                nstate = START;
-            end
+            FINISH: nstate = START;
             
             default: nstate = START;
         endcase

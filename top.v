@@ -5,10 +5,10 @@ module top (
 );
     wire [6:0] A, B;
     wire OP;
-    wire [6:0] R_result;
-    wire R_ZF;
+    wire [6:0] alu_result;
+    wire ZF;
     
-    controller controller_inst (
+    controller fsm (
         .clk(clk),
         .reset(reset),
         .A(A),
@@ -16,14 +16,14 @@ module top (
         .OP(OP)
     );
     
-    ALU_7bit alu_inst (
+    ALU_7bit datapath (
         .A(A),
         .B(B),
         .OP(OP),
-        .result(R_result),
-        .ZF(R_ZF)
+        .result(alu_result),
+        .ZF(ZF)
     );
     
-    assign result = R_result;
-    assign flag_gt_zero = ~R_ZF;  // Active high when result is not zero
+    assign result = alu_result;
+    assign flag_gt_zero = (alu_result != 7'b0); // Direct comparison
 endmodule

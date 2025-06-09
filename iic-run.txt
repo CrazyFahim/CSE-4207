@@ -1,0 +1,3 @@
+run:
+    iic-pdk sky130A
+    openlane config.json 

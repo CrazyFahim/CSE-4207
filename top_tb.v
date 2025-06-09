@@ -25,12 +25,12 @@ module top_tb;
         #10;
         reset = 0;
         
-        #100;
+        #150; // Cover all states
         $finish;
     end
     
     initial begin
-        $monitor("Time=%3t Result=%b Flag=%b", 
+        $monitor("Time=%0t Result=%b Flag=%b", 
                 $time, result, flag_gt_zero);
     end
 endmodule
