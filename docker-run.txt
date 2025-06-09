@@ -1,0 +1,4 @@
+sudo docker ps -a
+
+sudo docker cp iic-osic-tools_xserver_uid_0:/foss/designs/ALU "/media/fahim/Dell External1/Normal_Projects/iverilog/docker-image-cpy"
+
