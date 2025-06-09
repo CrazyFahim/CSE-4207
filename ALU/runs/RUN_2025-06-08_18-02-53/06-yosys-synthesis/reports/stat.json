@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -liberty /foss/designs/ALU/runs/RUN_2025-06-08_18-02-53/tmp/3b9a99ebdd5b45e081038bb96c7f5eaf.lib ",
+   "modules": {
+      "\\top": {
+         "num_wires":         12,
+         "num_wire_bits":     18,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 14,
+         "num_ports":         4,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         16,
+         "area":              213.955200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__buf_6": 2,
+            "sky130_fd_sc_hd__conb_1": 2,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__inv_2": 3,
+            "sky130_fd_sc_hd__nand2b_4": 2,
+            "sky130_fd_sc_hd__xnor2_4": 2,
+            "sky130_fd_sc_hd__xor2_4": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         12,
+         "num_wire_bits":     18,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 14,
+         "num_ports":         4,
+         "num_port_bits":     10,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         16,
+         "area":              213.955200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__buf_6": 2,
+            "sky130_fd_sc_hd__conb_1": 2,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__inv_2": 3,
+            "sky130_fd_sc_hd__nand2b_4": 2,
+            "sky130_fd_sc_hd__xnor2_4": 2,
+            "sky130_fd_sc_hd__xor2_4": 1
+         }
+      }
+}
+

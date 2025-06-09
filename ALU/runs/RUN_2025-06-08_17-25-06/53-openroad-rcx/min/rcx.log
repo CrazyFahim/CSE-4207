@@ -1,0 +1,40 @@
+Reading technology LEF file at '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef'…
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+Reading cell LEF file at '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 4 library cells
+[INFO ODB-0127] Reading DEF file: /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/52-odb-cellfrequencytables/ALU_7bit.def
+[INFO ODB-0128] Design: ALU_7bit
+[INFO ODB-0130]     Created 25 pins.
+[INFO ODB-0131]     Created 167 components and 872 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 644 connections.
+[INFO ODB-0133]     Created 82 nets and 228 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/52-odb-cellfrequencytables/ALU_7bit.def
+Using RCX ruleset '/foss/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
+[INFO RCX-0435] Reading extraction model file /foss/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre ...
+[INFO RCX-0436] RC segment generation ALU_7bit (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 259 rc segments
+[INFO RCX-0439] Coupling Cap extraction ALU_7bit ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 54% of 492 wires extracted
+[INFO RCX-0442] 100% of 492 wires extracted
+[INFO RCX-0045] Extract 82 nets, 337 rsegs, 337 caps, 474 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                88     561.79
+  Tap cell                                 12      15.01
+  Standard cell                            67     474.20
+  Total                                   167    1051.01
+Writing extracted parasitics to '/foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/53-openroad-rcx/min/ALU_7bit.min.spef'…
+[INFO RCX-0443] 82 nets finished

@@ -1,0 +1,40 @@
+Warning: Could not find a substitution layout for foreign cell 'sky130_ef_sc_hd__decap_12' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a211o_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a21o_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a21oi_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a2bb2o_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a311o_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__a31o_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__and2_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__and2b_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__and4b_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__buf_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__buf_2' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__clkbuf_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__clkbuf_2' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_3' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_4' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_6' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_8' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__fill_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__fill_2' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__inv_2' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__mux2_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__mux4_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__nor2_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__nor4_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__o2111a_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__o211a_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__o21a_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__o22a_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__or3_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__or3b_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__or4_1' (file=ALU_7bit.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__tapvpwrvgnd_1' (file=ALU_7bit.def)
+[INFO] Clearing cells…
+[INFO] Merging GDS files…
+[INFO] Copying top level cell 'ALU_7bit'…
+[INFO] Checking for missing GDS…
+[INFO] All LEF cells have matching GDS cells.
+[INFO] Writing out GDS '/foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/57-klayout-streamout/ALU_7bit.klayout.gds'…
+[INFO] Done.

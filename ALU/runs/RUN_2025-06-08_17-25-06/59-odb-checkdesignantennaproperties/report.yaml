@@ -1,0 +1,8 @@
+- cell: ALU_7bit
+  inout: []
+  input:
+  - B[3]
+  - B[4]
+  - B[5]
+  - B[6]
+  output: []

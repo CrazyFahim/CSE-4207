@@ -1,0 +1,9 @@
+%Warning-UNUSEDSIGNAL: /foss/designs/ALU/ALU_7bit.v:2:25: Bits of signal are not used: 'B'[6:3]
+                                                        : ... note: In instance 'top.alu_inst'
+    2 |     input wire [6:0] A, B,
+      |                         ^
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.036
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.036 2025-04-27 rev v5.036
+- Verilator: Built from 1.063 MB sources in 447 modules, into 0.023 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.024 s (elab=0.004, cvt=0.002, bld=0.000); cpu 0.024 s on 1 threads; alloced 28.145 MB

@@ -1,0 +1,8 @@
+
+19. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ALU_SHR_7bit.\out' from process `\ALU_SHR_7bit.$proc$/foss/designs/ALU/ALU_SHR_7bit.v:6$6'.
+No latch inferred for signal `\controller.\A' from process `\controller.$proc$/foss/designs/ALU/controller.v:22$5'.
+No latch inferred for signal `\controller.\B' from process `\controller.$proc$/foss/designs/ALU/controller.v:22$5'.
+No latch inferred for signal `\controller.\OP' from process `\controller.$proc$/foss/designs/ALU/controller.v:22$5'.
+No latch inferred for signal `\controller.\nstate' from process `\controller.$proc$/foss/designs/ALU/controller.v:22$5'.
+No latch inferred for signal `\ALU_7bit.\result' from process `\ALU_7bit.$proc$/foss/designs/ALU/ALU_7bit.v:13$2'.

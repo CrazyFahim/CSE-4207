@@ -1,0 +1,6 @@
+- cell: top
+  inout: []
+  input: []
+  output:
+  - flag_gt_zero
+  - result[3]

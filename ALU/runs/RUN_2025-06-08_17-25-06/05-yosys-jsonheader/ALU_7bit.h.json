@@ -1,0 +1,447 @@
+{
+  "creator": "Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+  "modules": {
+    "ALU_7bit": {
+      "attributes": {
+        "hdlname": "ALU_7bit",
+        "top": "00000000000000000000000000000001",
+        "src": "/foss/designs/ALU/ALU_7bit.v:1.1-23.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 9, 10, 11, 12, 13, 14, 15 ]
+        },
+        "OP": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "result": {
+          "direction": "output",
+          "bits": [ 17, 18, 19, 20, 21, 22, 23 ]
+        },
+        "ZF": {
+          "direction": "output",
+          "bits": [ 24 ]
+        }
+      },
+      "cells": {
+        "$eq$/foss/designs/ALU/ALU_7bit.v:22$2": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000111",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:22.18-22.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17, 18, 19, 20, 21, 22, 23 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$flatten\\NOT1.$not$/foss/designs/ALU/ALU_NOT_7bit.v:5$4": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000111",
+            "Y_WIDTH": "00000000000000000000000000000111"
+          },
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_NOT_7bit.v:5.21-5.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8 ],
+            "Y": [ 25, 26, 27, 28, 29, 30, 31 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$10_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 32 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$11_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 33 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$12_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 34 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$13_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 35 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$14_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 36 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$15_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 37 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$16_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$8": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000001000",
+            "WIDTH": "00000000000000000000000000000111"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", 8, "0", "0", "0", "0", "0", "0", 7, 8, "0", "0", "0", "0", "0", 6, 7, 8, "0", "0", "0", "0", 5, 6, 7, 8, "0", "0", "0", 4, 5, 6, 7, 8, "0", "0", 3, 4, 5, 6, 7, 8, "0", 2, 3, 4, 5, 6, 7, 8 ],
+            "S": [ 39, 32, 33, 34, 35, 36, 37, 38 ],
+            "Y": [ 40, 41, 42, 43, 44, 45, 46 ]
+          }
+        },
+        "$flatten\\SHR1.$procmux$9_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_SHR_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_SHR_7bit.v:7.9-16.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 39 ]
+          }
+        },
+        "$procmux$5": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000111"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_7bit.v:14.9-18.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 40, 41, 42, 43, 44, 45, 46, 25, 26, 27, 28, 29, 30, 31 ],
+            "S": [ 16, 47 ],
+            "Y": [ 17, 18, 19, 20, 21, 22, 23 ]
+          }
+        },
+        "$procmux$7_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/ALU/ALU_7bit.v:0.0-0.0|/foss/designs/ALU/ALU_7bit.v:14.9-18.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "Y": [ 47 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\SHR1.$procmux$10_CMP": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$11_CMP": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$12_CMP": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$13_CMP": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$14_CMP": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$15_CMP": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$16_CMP": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\SHR1.$procmux$9_CMP": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+          }
+        },
+        "$procmux$7_CMP": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:2.22-2.23"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:2.25-2.26"
+          }
+        },
+        "NOT1.result": {
+          "hide_name": 0,
+          "bits": [ 25, 26, 27, 28, 29, 30, 31 ],
+          "attributes": {
+            "hdlname": "NOT1 result",
+            "src": "/foss/designs/ALU/ALU_NOT_7bit.v:3.23-3.29"
+          }
+        },
+        "OP": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:3.16-3.18"
+          }
+        },
+        "R_SHR": {
+          "hide_name": 0,
+          "bits": [ 40, 41, 42, 43, 44, 45, 46 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:7.23-7.28"
+          }
+        },
+        "ZF": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:5.17-5.19"
+          }
+        },
+        "result": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22, 23 ],
+          "attributes": {
+            "src": "/foss/designs/ALU/ALU_7bit.v:4.22-4.28"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+yosys -y /usr/local/lib/python3.12/dist-packages/openlane/scripts/pyosys/json_header.py -- --config-in /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/05-yosys-jsonheader/config.json --extra-in /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/05-yosys-jsonheader/extra.json --output /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/05-yosys-jsonheader/ALU_7bit.h.json

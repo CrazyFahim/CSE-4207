@@ -1,0 +1,1 @@
+yosys -y /usr/local/lib/python3.12/dist-packages/openlane/scripts/pyosys/synthesize.py -- --config-in /foss/designs/ALU/runs/RUN_2025-06-08_18-02-53/06-yosys-synthesis/config.json --extra-in /foss/designs/ALU/runs/RUN_2025-06-08_18-02-53/06-yosys-synthesis/extra.json --output /foss/designs/ALU/runs/RUN_2025-06-08_18-02-53/06-yosys-synthesis/top.nl.v

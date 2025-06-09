@@ -1,0 +1,1 @@
+ruby /usr/local/lib/python3.12/dist-packages/openlane/scripts/klayout/xor.drc --output /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/60-klayout-xor/xor.xml --top ALU_7bit --threads 8 --ignore 81/14 /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/56-magic-streamout/ALU_7bit.magic.gds /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/57-klayout-streamout/ALU_7bit.klayout.gds

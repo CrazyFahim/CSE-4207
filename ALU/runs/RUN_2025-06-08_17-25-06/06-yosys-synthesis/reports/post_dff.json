@@ -1,0 +1,49 @@
+{
+   "creator": "Yosys 0.53 (git sha1 53c22ab7c, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -liberty /foss/designs/ALU/runs/RUN_2025-06-08_17-25-06/tmp/4d8c2230a3e74e15b880894ca6cd70da.lib ",
+   "modules": {
+      "\\ALU_7bit": {
+         "num_wires":         77,
+         "num_wire_bits":     95,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 23,
+         "num_ports":         5,
+         "num_port_bits":     23,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         80,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 28,
+            "$_MUX_": 13,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 8,
+            "$_ORNOT_": 4,
+            "$_OR_": 24
+         }
+      }
+   },
+      "design": {
+         "num_wires":         77,
+         "num_wire_bits":     95,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 23,
+         "num_ports":         5,
+         "num_port_bits":     23,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         80,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 28,
+            "$_MUX_": 13,
+            "$_NAND_": 2,
+            "$_NOR_": 1,
+            "$_NOT_": 8,
+            "$_ORNOT_": 4,
+            "$_OR_": 24
+         }
+      }
+}
+

@@ -1,0 +1,27 @@
+Warning: Could not find a substitution layout for foreign cell 'sky130_ef_sc_hd__decap_12' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__buf_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__buf_2' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__clkbuf_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__clkbuf_16' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__conb_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_3' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_4' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_6' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__decap_8' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__dfrtp_2' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__dfrtp_4' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__dlygate4sd3_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__fill_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__fill_2' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__inv_2' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__nand2b_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__tapvpwrvgnd_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__xnor2_1' (file=top.def)
+Warning: Could not find a substitution layout for foreign cell 'sky130_fd_sc_hd__xor2_1' (file=top.def)
+[INFO] Clearing cells…
+[INFO] Merging GDS files…
+[INFO] Copying top level cell 'top'…
+[INFO] Checking for missing GDS…
+[INFO] All LEF cells have matching GDS cells.
+[INFO] Writing out GDS '/foss/designs/ALU/runs/RUN_2025-06-08_18-02-53/57-klayout-streamout/top.klayout.gds'…
+[INFO] Done.
